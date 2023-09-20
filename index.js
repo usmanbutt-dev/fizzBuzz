@@ -5,7 +5,7 @@ button.addEventListener(`click`, ()=> {
     generate();
 })
 
-document.addEventListener(`keyup`, (event)=> {
+document.addEventListener(`keydown`, (event)=> {
     if(event.keyCode == 13 || event.keyCode == 32 ) {
         generate();
     }

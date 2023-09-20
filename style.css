@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: dodgerblue;
+    background-color: black;
 }
 
 .container {
@@ -13,19 +13,19 @@ body {
     height:  90vh;
     flex-direction: column;
     overflow-y: auto;
-    flex-wrap: wrap;
 }
 
 li {
     list-style: none;
     font-size: 24px;
-    padding: 3px;
+    padding: 5px;
     transition: transform 0.3s ease;
     border: 2px solid black;
     color: white;
     background-color: blueviolet;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    border-radius: 6px;
 }
 
 li.active {
@@ -33,13 +33,19 @@ li.active {
 }
 
 button {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     padding: 10px 18px;
     background-color:blueviolet;
     font-weight: bolder;
-    font-size: 48px;
+    font-size: 64px;
     color:white;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: rgb(95, 0, 136); 
+    cursor: pointer;
 }
 
 
@@ -49,6 +55,20 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 60%;
+    width: 70%;
     gap: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(195, 142, 244); 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-corner {
+    background:black; 
+    border-radius: 6px; 
 }
